@@ -1,6 +1,7 @@
-You're being propped up
-============================
+Blogosphere
+===
+The Blogosphere allows you to rotate links to your blog on a gratuitously javascripted sphere.
 
-Consult the following repo for best practices and workflow protocol:
-
-[Prop](https://github.com/NathanielWroblewski/prop)
+Screenshot
+---
+![Screen shot](https://raw.github.com/NathanielWroblewski/blogosphere/master/Screenshot.png)
