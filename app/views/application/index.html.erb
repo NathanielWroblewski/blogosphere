@@ -1,0 +1,44 @@
+<h1>Blogosphere</h1>
+<div id="cloud-container" style="position:absolute;top:100px;left:300px;width:500px;height:500px;">
+</div>
+
+<style>
+  h3:hover{
+    border: none;
+  }
+</style>
+
+<script>
+  window.cloud = new Clouder({
+    container: document.getElementById("cloud-container"),
+    tags: [{text: '<h3>Graduation</h3>', id: '56765943488/graduation', weight: 1},
+           {text: '<h3>Phase 3, Day 6</h3>', id: '52476783745/phase-3-day-6', weight: 1},
+           {text: '<h3>Don\'t Look Down</h3>', id: '52367278129/dont-look-down-week-7-day-four', weight: 1},
+           {text: '<h3>Phase 2 Recap</h3>', id: '51903353254/phase-two-recap', weight: 1},
+           {text: '<h3>Ask and You Shall Receive</h3>', id: '51324274273/ask-and-you-shall-receive', weight: 1},
+           {text: '<h3>Week 5, Day 5</h3>', id: '51249427210/week-5-day-5', weight: 1},
+           {text: '<h3>Week 5, Day 3</h3>', id: '51133531145/week-5-day-3', weight: 1},
+           {text: '<h3>Week 4 Recap</h3>', id: '50891469188/week-4-recap', weight: 1},
+           {text: '<h3>Week 4, Day 3</h3>', id: '50567029927/week-4-day-3', weight: 1},
+           {text: '<h3>You Know You\'re in Love When</h3>', id: '50485057621/you-know-youre-in-love-when-you-cant-fall-asleep', weight: 1},
+           {text: '<h3>Week 4, Day 2</h3>', id: '50484922660/week-4-day-2', weight: 1},
+           {text: '<h3>Week 4, Day 1</h3>', id: '50397009070/week-4-day-1', weight: 1},
+           {text: '<h3>Week 3, Day 5</h3>', id: '50197919920/week-3-day-5', weight: 1},
+           {text: '<h3>The Real Week 3, Day 4</h3>', id: '50074285126/the-real-week-3-day-4', weight: 1},
+           {text: '<h3>Week 3, Day 4</h3>', id: '50000952682/week-3-day-4', weight: 1},
+           {text: '<h3>Week 3, Day 2</h3>', id: '49919042623/week-three-day-two', weight: 1},
+           {text: '<h3>Week 3, Day 1</h3>', id: '49856414397/week-3-day-one', weight: 1},
+           {text: '<h3>Week 2 Summary</h3>', id: '49759196823/week-2-summary', weight: 1},
+           {text: '<h3>Week 1 Review</h3>', id: '49241543276/week-one-review', weight: 1},
+           {text: '<h3>Arrival</h3>', id: '48549891157/arrival', weight: 1},
+           {text: '<h3>From Chicago, To SF</h3>', id: '48548668692/from-chicago-to-sf', weight: 1},
+           {text: '<h3>Post-Prep Assessment Thoughts</h3>', id: '46250361954/post-prep-assessment-thoughts', weight: 1},
+           {text: '<h3>Past Perspectives</h3>', id: '38131084362/past-perspectives', weight: 1}
+         ],
+    callback: function(id) { window.location.href = 'http://rube-on-rails.tumblr.com/post/' + id},
+    fontSize:8,
+    fontShift: 4,
+    xScale: 0.9,
+    yScale: 0.9
+});
+</script>
