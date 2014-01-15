@@ -9,22 +9,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="ROBOTS" content="NOODP" />
-  <title><%%= app_name %></title>
+  <title>Blogosphere</title>
     <!-- Uncomment to make IE8 render like IE7 -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag :application, :media => 'all' %>
-  <%= javascript_include_tag "vendor/custom.modernizr" %>
+  <%= javascript_include_tag "modernizr" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="<%%= body_class %>">
+<body>
   <%= render 'flashes' -%>
   <%= render 'shared/nav_bar' %>
   <%= yield %>
   <%= render 'javascript' %>
-  <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false' %>
   <%= javascript_include_tag "application" %>
 </body>
 </html>
